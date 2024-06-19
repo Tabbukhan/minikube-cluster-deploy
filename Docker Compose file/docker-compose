@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: ./Techdome-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - techdome-net
+
+  backend:
+    build: ./Techdome-backend
+    ports:
+      - "5000:5000"
+    networks:
+      - techdome-net
+
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: passwd
+      POSTGRES_DB: techdome
+    ports:
+      - "5432:5432"
+    networks:
+      - techdome-net
+
+networks:
+  techdome-net:
