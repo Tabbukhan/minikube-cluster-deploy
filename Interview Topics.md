@@ -9,6 +9,6 @@
 
 
 ### Summary :
- Automate Infrastructure Scaling: Use Terraform to create and manage auto scaling groups and policies.
- Implement Unit Tests: Use Terratest to write and run tests for your Terraform code.
- Rollback Strategy: Backup your Terraform state before changes and use it to rollback if needed.
+- Automate Infrastructure Scaling: Use Terraform to create and manage auto scaling groups and policies.
+- Implement Unit Tests: Use Terratest to write and run tests for your Terraform code.
+- Rollback Strategy: Backup your Terraform state before changes and use it to rollback if needed.
