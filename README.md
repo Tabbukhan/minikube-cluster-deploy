@@ -26,8 +26,8 @@ This project demonstrates a multi-container application deployment consisting of
 ## Getting Started :
 
 ### 1. Clone the Repositories
+//```sh
 
-```sh
       git clone https://github.com/Anand-1432/Techdome-backend.git backend
       git clone https://github.com/Anand-1432/Techdome-frontend.git frontend
 
