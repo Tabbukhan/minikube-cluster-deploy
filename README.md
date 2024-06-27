@@ -117,13 +117,37 @@ cd ../frontend
     ├── main_test.go
     └── ...
 
+ ### Setup Terraform :
+Step 1: Create a Terraform configuration file 'main.tf'
+Step 2: Apply the Terraform configuration
 
-### Important Topics for Interview
-  Docker and Docker Compose: Understanding containerization and multi-container application setup.
-  Kubernetes: Deployment, services, scaling, and management.
-  Terraform: Infrastructure as code, AWS integration, auto-scaling configuration.
-  Terratest: Writing unit tests for infrastructure code.
-  Rollback Strategies: Managing and reverting infrastructure changes.
-  Container Networking: Networking in Docker and Kubernetes.
-  Continuous Integration/Continuous Deployment (CI/CD): Automation of application deployment and updates.
-  
+            terraform init
+            terraform apply
+            
+### Implementing Unit Tests for Terraform Code:
+      To implement unit tests for Terraform code, you can use terratest, a Go library that makes it easier to write automated tests for your infrastructure code.
+
+Step 1: Install Terratest
+Step 2: Write Terratest Test Cases 'main_test.go'
+Step 3: Run the Tests
+
+      go test -v
+
+### Demonstrating a Rollback Strategy for Infrastructure Changes:
+Step 1: Create a Backup of Your State File
+      Before making changes, ensure you have a backup of your current state file.
+
+      cp terraform.tfstate terraform.tfstate.backup
+
+Step 2: Make Changes and Apply Them
+      Make changes to your Terraform configuration and apply them.
+      
+      terraform apply
+
+Step 3: Rollback to the Previous State
+      If something goes wrong, you can rollback to the previous state using the backup.
+
+      cp terraform.tfstate.backup terraform.tfstate
+      terraform apply
+
+Alternatively, you can use terraform destroy to tear down the new infrastructure and re-apply the original configuration.
