@@ -91,6 +91,8 @@ cd ../frontend
     terraform apply
 
   ### DIRECTORY STRUCTURE :
+
+  ```json
 .
 ├── backend/
 │   ├── Dockerfile
@@ -117,6 +119,8 @@ cd ../frontend
 └── tests/
     ├── main_test.go
     └── ...
+
+```
 
  ### Setup Terraform :
 Step 1: Create a Terraform configuration file 'main.tf'
