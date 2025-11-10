@@ -92,7 +92,7 @@ cd ../frontend
 
   ### DIRECTORY STRUCTURE :
 
-  ```json
+  ```shell
 .
 ├── backend/
 │   ├── Dockerfile
